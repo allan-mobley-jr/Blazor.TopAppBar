@@ -1,2 +1,2 @@
-# Blazor.TopAppBar
-Blazor Top App Bar utilizes the MDC component of the same name and acts as a container for items such as application title, navigation icon, and action items.
+# Blazor Top App Bar
+A Blazor component library that utilizes the MDC Top App Bar component and acts as a container for items such as application title, navigation icon, and action items.
