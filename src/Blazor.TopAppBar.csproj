@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="package.targets" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Mobsites</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <Company>Mobsites</Company>
+    <Authors>Allan Mobley</Authors>
+    <Copyright>© 2020 Mobsites</Copyright>
+    <Description>A Blazor component library that utilizes the MDC Top App Bar component and acts as a container for items such as application title, navigation icon, and action items.</Description>
+    <PackageId>Mobsites.Blazor.TopAppBar</PackageId>
+    <IsPackable>true</IsPackable>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>mobsites-logo.png</PackageIcon>
+    <PackageReleaseNotes>First preview release.</PackageReleaseNotes>
+    <PackageVersion>1.0.0-preview1</PackageVersion>
+    <PackageTags>blazor;mdc;app bar;material;design;google;component</PackageTags>
+    <PackageProjectUrl>https://github.com/Mobsites/Blazor.TopAppBar</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Mobsites/Blazor.TopAppBar</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="assets\mobsites-logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

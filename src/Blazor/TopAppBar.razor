@@ -1,0 +1,20 @@
+@{
+  string type = Type switch
+  {
+    Types.Standard => null,
+    Types.Fixed => "mdc-top-app-bar--fixed",
+    Types.Prominent => "mdc-top-app-bar--prominent",
+    Types.Dense => "mdc-top-app-bar--dense",
+    Types.Short => "mdc-top-app-bar--short",
+    Types.ShortAlways => "mdc-top-app-bar--short mdc-top-app-bar--short-collapsed",
+    _ => null
+  };
+}
+
+<header class="mdc-top-app-bar @type @Class" @attributes="@ExtraAttributes">
+  <div class="mdc-top-app-bar__row">
+    <CascadingValue Value="this">
+      @ChildContent
+    </CascadingValue>
+  </div>
+</header>

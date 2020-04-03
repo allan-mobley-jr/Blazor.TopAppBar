@@ -1,0 +1,18 @@
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+.mdc-top-app-bar {
+    background-color: var(--mdc-theme-primary, #052561);
+}
+
+.mdc-top-app-bar__title span {
+    vertical-align: middle!important;
+}
+
+@media (max-width: 599px) {
+    .mdc-top-app-bar-hide {
+        display: none;
+    }
+    .mdc-top-app-bar__title {
+        padding-left: 0px;
+    }
+}
